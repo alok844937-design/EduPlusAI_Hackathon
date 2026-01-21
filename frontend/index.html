@@ -1,0 +1,15 @@
+<input id="question" placeholder="Ask your doubt" />
+<button onclick="askDoubt()">Ask AI</button>
+<div id=""answer"></div>
+<script>
+    async function askDoubt() {
+        const question = document.getElementById("question").value;
+        const response = await fetch("https://127.0.0.1:8000/ask-doubt", {
+            method: "POST", 
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({question: question, topic: "DSA"})
+        });
+        const data = await response.json();
+        document.getElementById("answer").innerText = data.answer;
+    }
+</script>

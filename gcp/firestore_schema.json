@@ -1,0 +1,12 @@
+{
+    "students": {
+        "user_id": "string",
+        "scores": [
+            {
+                "topic": "string",
+                "score": "number"
+            }
+        ],
+        "last_active": "timestamp"
+    }
+}

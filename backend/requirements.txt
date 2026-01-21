@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+scikit-learn
+# GCP 
+google-cloud-firestore
+google-cloud-bigquery
+google-cloud-aiplatform
+
+# Utils
+pydantic
